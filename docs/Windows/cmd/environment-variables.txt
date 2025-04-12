@@ -1,0 +1,30 @@
+# What's the Difference Between the Following Content?
+
+(%HOME% or %HOMEDRIVE%%HOMEPATH% or %USERPROFILE%)
+
+Each of these environment variables represents a specific path or folder location for a user profile in Windows, but they have slightly different uses and purposes:
+
+1. **%HOME%**:
+   
+   - This variable is often set manually or by specific applications (e.g., Git) to point to the user's preferred home directory, typically set to `%USERPROFILE%` if not otherwise defined. Not all applications rely on `%HOME%`, so its use can be limited and variable-dependent.
+
+2. **%HOMEDRIVE%%HOMEPATH%**:
+   
+   - `%HOMEDRIVE%` refers to the drive where the user’s home directory is located (usually `C:`).
+   - `%HOMEPATH%` is the path to the user’s profile folder on the drive specified by `%HOMEDRIVE%` (e.g., `\Users\Username`).
+   - Together, `%HOMEDRIVE%%HOMEPATH%` constructs a complete path to the user’s profile folder, like `C:\Users\Username`, and is commonly used for backward compatibility in applications.
+
+3. **%USERPROFILE%**:
+   
+   - This variable directly points to the full path of the current user's profile folder, such as `C:\Users\Username`.
+   - It is the most commonly used variable for accessing user-specific directories, as it simplifies and standardizes the profile path.
+
+### Summary
+
+- `%HOME%` is user-defined and varies by application, `%HOMEDRIVE%%HOMEPATH%` is the system-derived path from separate drive and folder variables, and `%USERPROFILE%` is a direct and straightforward path to the user’s profile folder.
+
+## 🌐 Sources
+
+1. [stackoverflow.com - What is the meaning of these Windows environment variables](https://stackoverflow.com/questions/606483/what-is-the-meaning-of-these-windows-environment-variables-homedrive-homepath)
+2. [answers.microsoft.com - What is %UserProfile% called? Is there a list of such variables](https://answers.microsoft.com/en-us/windows/forum/all/what-is-userprofile-called-is-there-a-list-of-such/0a6ca4f0-3b66-425c-8daf-5c6ff09f030a)
+3. [superuser.com - How do I change HOMEDRIVE, HOMEPATH, and HOMESHARE in Windows XP](https://superuser.com/questions/246731/how-do-i-change-homedrive-homepath-and-homeshare-in-windows-xp)

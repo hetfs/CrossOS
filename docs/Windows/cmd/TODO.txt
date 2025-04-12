@@ -1,0 +1,29 @@
+[An overview on Windows Terminal | Microsoft Learn](https://learn.microsoft.com/en-us/windows/terminal/)
+
+[cmd | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd)
+
+ [Windows registry for advanced users - Windows Server | Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)
+
+[Windows Terminal General Profile Settings | Microsoft Learn](https://learn.microsoft.com/en-us/windows/terminal/customize-settings/profile-general#starting-directory)
+
+[Windows Terminal installation | Microsoft Learn](https://learn.microsoft.com/en-us/windows/terminal/install#settings-json-file)
+
+## Guide to Windows Batch Scripting
+
+[Guide to Windows Batch Scripting - /* steve jansen */](https://steve-jansen.github.io/guides/windows-batch-scripting/)
+
+[Windows Batch Scripts | Geoff Does Stuff](https://www.geoffdoesstuff.com/windows-batch-scripts)
+
+
+
+#### Filename parsing in batch file and more idioms
+
+https://www.rgagnon.com/gp/gp-0008.html
+
+[For | Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490909(v=technet.10)?redirectedfrom=MSDN)
+
+[What does %~d0 mean in a Windows batch file? - Stack Overflow](https://stackoverflow.com/questions/112055/what-does-d0-mean-in-a-windows-batch-file?noredirect=1&lq=1)
+
+[batch file - What does %~dp0 mean, and how does it work? - Stack Overflow](https://stackoverflow.com/questions/5034076/what-does-dp0-mean-and-how-does-it-work#:%7E:text=The%20%25%7Edp0%20(that%E2%80%99s%20a%20zero)%20variable%20when%20referenced,name.%20%250%20refers%20to%20the%20batch%20file%20itself.)
+
+

@@ -1,0 +1,134 @@
+======  A PowerShell module to show file and folder icons in the terminal========
+
+You must be using one of the fonts provided by Nerd Fonts for this module to work as these fonts include tons of custom glyphs/icons that are referenced by their unicode number.
+
+=== To install the module from the PowerShell Gallery:  =========================
+
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+=== You can also install it from Scoop:  ========================================
+
+scoop bucket add extras
+scoop install terminal-icons 
+scoop update terminal-icons
+
+=== Usage  ======================================================================
+
+Import-Module -Name Terminal-Icons
+
+Get-Item ./README.md
+
+Get-ChildItem
+
+Get-ChildItem | Format-List
+
+Get-ChildItem | Format-Wide
+
+Get-ChildItem -Path . -Force
+
+=================================================================================
+What Is Scoop? How to Install Scoop in Windows
+Scoop is a command-line installer for Windows. With Scoop, you can install programs and plugins for your terminal. Scoop is a great tool if you're a Linux user who has switched to Windows, as it lets you install programs using the terminal.
+
+==== SCOOP INTALLATION  =====
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+irm get.scoop.sh | iex
+
+To see all configurable parameters of the installer,run:
+
+.\install.ps1 -?
+
+scoop install innounp
+scoop install dark or scoop install wixtoolset
+irm get.scoop.sh -outfile 'install.ps1'
+
+==== ADMIN  ---------
+Installation under the administrator console has been disabled by default for security considerations. Run this to enable:
+
+.\install.ps1 -RunAsAdmin [-OtherParameters ...]
+iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+
+---------------------------------------------------------
+
+https://github.com/ScoopInstaller/Install#for-admin
+
+======  Inside PowerShell, type the code below  =================================
+
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser 
+
+iwr -useb get.scoop.sh | iex
+
+scoop help ==============> This will show all the available commands with description in summary.
+scoop status ------------> check for any latest available versions and current status.
+scoop checkup -----------> Check for any Problems
+
+Install a Program
+Scoop users can download fonts using the Scoop bucket for Nerd Fonts:
+scoop bucket add nerd-fonts
+scoop install Hack-NF
+
+scoop bucket add extras
+scoop install windows-terminal
+scoop update windows-terminal
+
+scoop search python
+scoop install nodejs
+
+Uninstall Scoop appName --->  running scoop uninstall scoop command
+
+You can choose to remove it along with all the programs that you have installed through scoop by just running scoop uninstall scoop command
+
+scoop uninstall scoop
+
+=======================================================
+Install Oh My Posh for PowerShell To customize your PowerShell prompt,
+Enter the command:
+
+winget install JanDeDobbeleer.OhMyPosh
+(Get-Command oh-my-posh).Source
+winget upgrade JanDeDobbeleer.OhMyPosh -s winget
+
+Choose a theme and update your PowerShell profile with this command. (You can replace notepad with the text editor of your choice.)
+
+In powershell Run: notepad $PROFILE
+
+If you receive a path error, you may not yet have a profile for PowerShell. 
+To create one, use the following PowerShell command to create a profile and then try opening it with a text editor again.
+
+new-item -type file -path $profile -force
+
+Default themes
+Add the following to the end of your PowerShell profile file to set the paradox theme. 
+(Replace paradox with the theme of your choice.)
+
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\paradox.omp.json" | Invoke-Expression
+
+Oh My Posh has a CLI to help you select and install a Nerd Font (beta):
+oh-my-posh font install
+
+Now, each new PowerShell instance will start by importing Oh My Posh and setting your command line theme.
+If you receive a script error when trying to open a new PowerShell instance, 
+your Execution Policy for PowerShell may be restricted. To set your PowerShell Execution Policy to unrestricted, 
+you will need to launch PowerShell as an administrator and then use the following command:
+
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+
+Use Terminal-Icons to add missing folder or file icons
+To install Terminal-Icons with PowerShell, use the command:
+
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+==============================================================
+https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup
+https://ohmyposh.dev/docs/themes
+https://github.com/devblackops/Terminal-Icons
+https://github.com/ryanoasis/nerd-fonts
+https://www.nerdfonts.com/font-downloads
+
+posh-git is a PowerShell module that integrates Git and PowerShell by providing Git status summary information that can be displayed in the PowerShell prompt, e.g.:
+https://github.com/dahlbyk/posh-git#overview
+
+Installing Chocolatey
+https://chocolatey.org/install

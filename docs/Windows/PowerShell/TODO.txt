@@ -1,0 +1,18 @@
+https://learn.microsoft.com/en-us/powershell/
+
+Create a folder alias in PowerShell
+
+[Create a folder alias in PowerShell - Stack Overflow](https://stackoverflow.com/questions/16597839/create-a-folder-alias-in-powershell)
+
+## Sources
+
+1. [community.spiceworks.com - How do I set my batch script to run a single instance only](https://community.spiceworks.com/t/how-do-i-set-my-batch-script-to-run-a-single-instance-only/671157)
+2. [stackoverflow.com - Execute batch script once a day only](https://stackoverflow.com/questions/63603445/execute-batch-script-once-a-day-only)
+3. [community.spiceworks.com - Can you have a bat file run only once during logon?](https://community.spiceworks.com/t/can-you-have-a-bat-file-run-only-once-during-logon/11548)
+4. [tenforums.com - Batch file that runs once for all new user accounts](https://www.tenforums.com/software-apps/91213-batch-file-runs-once-all-new-user-accounts.html)
+5. [superuser.com - Create batch file to run one time and exit command prompt window](https://superuser.com/questions/1011545/create-batch-file-to-run-one-time-and-exit-comand-prompt-window)
+6. [jpsoft.com - Running only one instance of a batch file](https://jpsoft.com/forums/threads/running-only-one-instance-of-a-batch-file.6506/)
+
+# PowerShell Create File: Step-by-Step Guide
+
+https://blog.netwrix.com/powershell-create-file
